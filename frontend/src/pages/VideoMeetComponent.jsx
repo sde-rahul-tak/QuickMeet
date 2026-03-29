@@ -454,7 +454,7 @@ export default function VideoMeetComponent() {
 
             {askForUsername === true ?
 
-                <div>
+                <div className='loby-container'>
 
 
                     <h2>Enter into Lobby </h2>
@@ -518,10 +518,9 @@ export default function VideoMeetComponent() {
                                 {screen === true ? <ScreenShareIcon /> : <StopScreenShareIcon />}
                             </IconButton> : <></>}
 
-                        <Badge badgeContent={newMessages} max={999} color='orange'>
-                            <IconButton onClick={() => setModal(!showModal)} style={{ color: "white" }}>
-                                <ChatIcon />                        </IconButton>
-                        </Badge>
+                        <IconButton onClick={() => setModal(!showModal)} style={{ color: "white" }}>
+                            <ChatIcon />
+                         </IconButton>
 
                     </div>
 

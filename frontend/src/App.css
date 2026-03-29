@@ -77,6 +77,59 @@
   width: auto;
 }
 
+/* mobile responsive landing page */
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media screen and (max-width: 768px) {
+
+  /* NAVBAR */
+  .landingPageContainer nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .landingPageContainer nav .navlist {
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* MAIN CONTAINER */
+  .landingMainContainer {
+    flex-direction: column;
+    text-align: center;
+    padding-inline: 1rem;
+    height: auto;
+    gap: 2rem;
+  }
+
+  /* TEXT SIDE */
+  .landingMainContainer div:nth-child(1) {
+    font-size: 1.5rem;
+  }
+
+  .landingMainContainer > div:nth-child(1) h1 {
+    font-size: 1.8rem;
+  }
+
+  .landingMainContainer > div:nth-child(1) p {
+    font-size: 1rem;
+  }
+
+  /* BUTTON CENTER */
+  .landingMainContainer > div:nth-child(1) div[role='button'] {
+    margin-inline: auto;
+  }
+
+  /* IMAGE */
+  .landingMainContainer div:nth-child(2) > img {
+    width: 90%;
+    height: auto;
+  }
+}
+
 /* home component  */
 
 .navBar {
@@ -112,4 +165,67 @@
   width: 30vw;
   height: auto;
   border-radius: 20px;
+}
+
+.leftPanel > div > div {
+  margin-top: 20px;
+  }
+
+/* ================= HOME MOBILE RESPONSIVE ================= */
+
+@media screen and (max-width: 768px) {
+
+  /* NAVBAR */
+  .navBar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .navBar > div {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  /* MAIN CONTAINER */
+  .meetContainer {
+    flex-direction: column;
+    height: auto;
+    gap: 2rem;
+    align-items: center;
+    padding-top: 50px;
+  }
+
+  /* LEFT PANEL */
+  .leftPanel {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .leftPanel h2 {
+    font-size: 1.4rem;
+  }
+
+  /* INPUT + BUTTON */
+  .leftPanel > div > div {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .leftPanel input {
+    width: 90%;
+  }
+
+  /* RIGHT PANEL IMAGE */
+  .rightPanel {
+    justify-content: center;
+  }
+
+  .rightPanel > img {
+    width: 80%;
+  }
 }
