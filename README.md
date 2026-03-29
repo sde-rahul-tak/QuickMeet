@@ -79,3 +79,51 @@ The application ensures smooth navigation after a call ends:
 
 ## Deployment
 ### Live Project Link: https://quickmeet-1-bwpx.onrender.com/
+
+
+
+
+## Screenshots
+
+### Project Flow
+![Flow Chart](screenshots/projectFlowChart.jpeg)
+
+---
+
+### Home Page
+![Home Page](screenshots/homePage.png)
+
+---
+
+### Authentication Pages
+
+#### Login Page
+![Login](screenshots/login.png)
+
+#### Register Page
+![Register](screenshots/register.png)
+
+---
+
+### Meeting Flow
+
+#### Lobby Page
+![Lobby](screenshots/lobyPage.png)
+
+#### Video Meeting Screen
+![Meeting](screenshots/videoMeet.png)
+
+---
+
+### Features
+
+#### Screen Sharing
+![Screen Share](screenshots/screenShare.jpeg)
+
+#### Responsive UI
+![Responsive UI](screenshots/responsiveUi.png)
+
+---
+
+### Desktop View
+![Desktop UI](screenshots/desktopUI.png)
