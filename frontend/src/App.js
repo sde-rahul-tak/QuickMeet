@@ -2,10 +2,12 @@ import "./App.css";
 import { AuthProvider } from "./contexts/AuthContext";
 import Authentication from "./pages/authentication";
 import LandingPage from "./pages/landing";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import VideoMeetComponent from "./pages/VideoMeetComponent";
 import HomeComponent from "./pages/home";
 import History from "./pages/history";
+
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
