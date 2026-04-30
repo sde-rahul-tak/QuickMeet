@@ -42,6 +42,7 @@
     border: 2px solid white;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
     z-index: 10;
+    transform: scaleX(-1);
 }
 
 /* ===== CONTROL BAR ===== */
@@ -57,7 +58,7 @@
 
 /* Glass effect buttons */
 .buttonContainers button {
-    background: rgba(255, 255, 255, 0.15) !important;
+    background: rgba(30, 142, 212, 0.671) !important;
     backdrop-filter: blur(10px);
     border-radius: 50% !important;
     padding: 15px !important;
@@ -65,9 +66,20 @@
 }
 
 .buttonContainers button:hover {
-    background: rgba(255, 255, 255, 0.35) !important;
+   background: rgb(4, 122, 195) !important;
     transform: scale(1.1);
 }
+
+/* 2nd button ke liye */
+.buttonContainers button:nth-child(2) {
+    background: rgba(255, 0, 0, 0.7) !important;
+}
+
+/* Hover pe dark red */
+.buttonContainers button:nth-child(2):hover {
+    background: rgb(180, 0, 0) !important;
+}
+
 
 .buttonContainers svg {
     font-size: 28px;
