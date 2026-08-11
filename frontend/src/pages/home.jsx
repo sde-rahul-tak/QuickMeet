@@ -42,7 +42,7 @@ function HomeComponent() {
       <div className="meetContainer">
         <div className="leftPanel">
           <div>
-            <h2>Quality Talks. Clear Connections.</h2>
+            <h1>Simple Meetings. Better Connections.</h1>
 
             <div style={{ display: "flex", gap: "10px" }}>
               <TextField
@@ -50,17 +50,26 @@ function HomeComponent() {
                 id="outlined-basic"
                 label="Meeting Code"
                 variant="outlined"
+                className="textField"
               />
-              <Button onClick={handleJoinVideoCall} variant="contained">
+              <Button
+                className="joinBtn"
+                onClick={handleJoinVideoCall}
+                variant="contained"
+              >
                 Join
               </Button>
             </div>
           </div>
         </div>
         <div className="rightPanel">
-          <img srcSet="/logo3.png" alt="" />
+          <img srcSet="/bg02.png" alt="" />
         </div>
       </div>
+
+      <footer className="footer">
+        <p>© 2026 Rahul Tak | All Rights Reserved.</p>
+      </footer>
     </>
   );
 }

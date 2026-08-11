@@ -164,11 +164,13 @@
 }
 
 .meetContainer {
-  display: flex;
-  padding-inline: 20px;
-  height: 80vh;
-  gap: 10vw;
-  justify-content: center;
+    display: flex;
+    padding-inline: 20px;
+    height: calc(100vh - 115px);
+    gap: 10vw;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
 }
 
 .leftPanel {
@@ -446,4 +448,15 @@
 .historyBtn:hover,
 .logoutBtn:hover {
     opacity: 0.75;
+}
+
+.textField{
+  width: 250px;
+}
+
+.joinBtn{
+background-color: rgb(15, 110, 15) !important; 
+padding-inline: 40px !important;
+ border-radius: 20px 12px !important;
+ font-weight: 600 !important;
 }
