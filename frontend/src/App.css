@@ -1,3 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 *{
   padding: 0px;
   margin: 0px;
@@ -389,7 +401,8 @@
 /* home page  */
 
 .homeNavBar {
-    height: 80px;
+    min-height: 80px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -402,6 +415,7 @@
     font-size: 34px;
     font-weight: 900;
     color: #07111f;
+    white-space: nowrap;
 }
 
 .homeNavRight {
@@ -459,4 +473,114 @@ background-color: rgb(15, 110, 15) !important;
 padding-inline: 40px !important;
  border-radius: 20px 12px !important;
  font-weight: 600 !important;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    /* NAVBAR */
+    .homeNavBar {
+        height: auto;
+        min-height: 70px;
+        padding: 15px 18px;
+        gap: 10px;
+    }
+
+    .logo {
+        font-size: 27px;
+    }
+
+    .homeNavRight {
+        gap: 8px;
+    }
+
+    .historyBtn,
+    .logoutBtn {
+        font-size: 14px;
+        padding: 9px 12px;
+        border-radius: 20px 12px;
+        white-space: nowrap;
+    }
+
+    .historyBtn svg {
+        font-size: 18px;
+    }
+
+
+    /* MAIN CONTENT */
+    .meetContainer {
+        width: 100%;
+        min-height: calc(100vh - 70px);
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 35px;
+        padding: 45px 15px 20px;
+        box-sizing: border-box;
+    }
+
+
+    /* LEFT CONTENT */
+    .leftPanel {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .leftPanel > div {
+        width: 100%;
+    }
+
+    .leftPanel h2 {
+        font-size: 1.8rem;
+        line-height: 1.25;
+    }
+
+
+    /* INPUT + JOIN BUTTON */
+    .leftPanel > div > div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 35px;
+    }
+
+    .textField {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .joinBtn {
+        padding-inline: 40px !important;
+        border-radius: 20px 12px !important;
+    }
+
+
+    /* IMAGE */
+    .rightPanel {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .rightPanel > img {
+        width: 90%;
+        max-width: 380px;
+        height: auto;
+    }
+
+
+    /* FOOTER */
+    .footer {
+        width: 100%;
+        padding: 0 15px 20px;
+        margin-top: 0;
+        font-size: 13px;
+    }
 }
