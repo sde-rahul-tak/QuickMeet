@@ -584,3 +584,146 @@ padding-inline: 40px !important;
         font-size: 13px;
     }
 }
+
+
+
+
+
+/* ================= LOBBY PAGE ================= */
+
+.loby-container {
+    width: 100%;
+    min-height: 100vh;
+    background: #fff;
+    position: relative;
+}
+
+
+/* ================= HEADER ================= */
+
+.loby-header {
+    width: 100%;
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 45px;
+
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.loby-header .logo {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 800;
+    color: #09101A;
+}
+
+.loby-header p {
+    margin: 0;
+    font-size: 14px;
+    color: #6b7280;
+}
+
+
+/* ================= LOBBY CONTENT ================= */
+
+.loby-content {
+    min-height: calc(100vh - 75px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 14px;
+    padding: 30px 20px;
+}
+
+.loby-content h2 {
+    margin: 0;
+    font-size: 34px;
+    font-weight: 700;
+    color: #09101A;
+}
+
+.loby-content > p {
+    margin: 0 0 15px;
+    color: #6b7280;
+    font-size: 16px;
+}
+
+.loby-content .MuiTextField-root {
+    width: 300px;
+}
+
+.loby-content button {
+    min-width: 130px;
+    height: 45px;
+
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border-radius: 20px 12px !important;
+    background-color: rgb(7, 103, 7);
+
+}
+
+.loby-content video {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
+    border-radius: 15px;
+    transform: scaleX(-1) !important;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media screen and (max-width: 600px) {
+
+    .loby-header {
+        height: 65px;
+        padding: 0 18px;
+    }
+
+    .loby-header .logo {
+        font-size: 24px;
+    }
+
+    .loby-header p {
+        font-size: 11px;
+        text-align: right;
+    }
+
+    .loby-content {
+        min-height: calc(100vh - 65px);
+        padding: 25px 15px;
+    }
+
+    .loby-content h2 {
+        font-size: 27px;
+    }
+
+    .loby-content > p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .loby-content .MuiTextField-root {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .loby-content button {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .loby-content video {
+        max-width: 100%;
+    }
+}
